@@ -1,5 +1,6 @@
 console.log("js is connected")
 
+// index page opening essay
 let indexEssay = [
     {
     "p1" : {
@@ -69,15 +70,11 @@ let indexEssay = [
 }
 ];
 
-
+// header return functions
 let heading1 = "";
 let heading2 = "";
 let heading3 = "";
 let heading4 = ""; 
-
-// let headingIndex = 0;
-let bodyEssay = "";
-
 
 function essayHeading1() {
     heading1 = indexEssay[0].p1.heading;
@@ -99,51 +96,51 @@ function essayHeading4() {
     console.log(heading4);
     document.getElementById("p-4-head").innerHTML = heading4;
 };
-
 essayHeading1();
 essayHeading2();
 essayHeading3();
 essayHeading4();
 
+// body functions
+let pg1Ln = "";
+let pg2Ln = "";
+let pg3Ln = "";
+let pg4Ln = "";
 
-    // loop through array for body
-    
-    // append to body
-
-
-
-
-
-
-
-
-
-
-/*
-
-let browserIndex = 0;
-
-// serve each paragraph with animation & advance button
-function essayNext() {
-
-// console.log(browserIndex);
-
-browserEssay = indexEssay[browserIndex];
-// console.log(browserEssay);
-
-document.getElementById('index-essay').innerText = browserEssay
-
-browserIndex += 1;
-
-//  console.log(browserIndex);
-
+function pg1() {
+    for (let i = 0;  i < indexEssay[0].p1.body.length; i++) {
+        pg1Ln = indexEssay[0].p1.body[i];
+        console.log(pg1Ln);
+        document.getElementById("p-1-body").append(pg1Ln);
+    }
 };
-
-// essayNext();
+function pg2() {
+    for (let i = 0;  i < indexEssay[0].p2.body.length; i++) {
+        pg2Ln = indexEssay[0].p2.body[i];
+        console.log(pg2Ln);
+        document.getElementById("p-2-body").append(pg2Ln);
+    }
+};
+function pg3() {
+    for (let i = 0;  i < indexEssay[0].p3.body.length; i++) {
+        pg3Ln = indexEssay[0].p3.body[i];
+        console.log(pg3Ln);
+        document.getElementById("p-3-body").append(pg3Ln);
+    }
+};
+function pg4() {
+    for (let i = 0;  i < indexEssay[0].p4.body.length; i++) {
+        pg4Ln = indexEssay[0].p4.body[i];
+        console.log(pg4Ln);
+        document.getElementById("p-4-body").append(pg4Ln);
+    }
+};
+pg1();
+pg2();
+pg3();
+pg4();
 
 
 // serve instructions button
 // button click triggers instructions gif
 // timed button appears at end of instructions gif to go to main page
-
-*/
