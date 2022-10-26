@@ -1,4 +1,20 @@
-p {
+#essay-display {
+    margin-top: 50px;
+}
+
+.index-essay-head {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
+    font-size: 22px;
+    color: darkred;
+    font-weight: bold;
+}
+
+.index-essay {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 50px;
 }

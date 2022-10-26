@@ -1,7 +1,4 @@
-console.log("js is connected")
-
-let indexEssay = [
-    {
+{
     "p1" : {
         "heading" : "In 1861, a woman writing under the pseudonym Linda Brent published a narrative titled <i>Incidents in the Life of a Slave Girl</i>, recounting her experience as an enslaved Black woman on the plantation of the Flint family in Edenton, North Carolina.",
         "body" : [
@@ -67,83 +64,4 @@ let indexEssay = [
         "body" : "For now, we will travel from where we are now to 6 W. King St., the location of Jacobs’ grandmother’s house and the garret where codes were disrupted and freedom became possible."
     }
 }
-];
-
-
-let heading1 = "";
-let heading2 = "";
-let heading3 = "";
-let heading4 = ""; 
-
-// let headingIndex = 0;
-let bodyEssay = "";
-
-
-function essayHeading1() {
-    heading1 = indexEssay[0].p1.heading;
-    console.log(heading1);
-    document.getElementById("p-1-head").innerHTML = heading1;
-};
-function essayHeading2() {
-    heading2 = indexEssay[0].p2.heading;
-    console.log(heading2);
-    document.getElementById("p-2-head").innerHTML = heading2;
-};
-function essayHeading3() {
-    heading3 = indexEssay[0].p3.heading;
-    console.log(heading3);
-    document.getElementById("p-3-head").innerHTML = heading3;
-};
-function essayHeading4() {
-    heading4 = indexEssay[0].p4.heading;
-    console.log(heading4);
-    document.getElementById("p-4-head").innerHTML = heading4;
-};
-
-essayHeading1();
-essayHeading2();
-essayHeading3();
-essayHeading4();
-
-
-    // loop through array for body
     
-    // append to body
-
-
-
-
-
-
-
-
-
-
-/*
-
-let browserIndex = 0;
-
-// serve each paragraph with animation & advance button
-function essayNext() {
-
-// console.log(browserIndex);
-
-browserEssay = indexEssay[browserIndex];
-// console.log(browserEssay);
-
-document.getElementById('index-essay').innerText = browserEssay
-
-browserIndex += 1;
-
-//  console.log(browserIndex);
-
-};
-
-// essayNext();
-
-
-// serve instructions button
-// button click triggers instructions gif
-// timed button appears at end of instructions gif to go to main page
-
-*/
