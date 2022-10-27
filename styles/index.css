@@ -12,8 +12,28 @@
 .index-essay {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
+    color: black;
 }
 
 .tab {
     margin-left: 50px;
+}
+
+#inst-video {
+    width: 100%;
+    height: 100%;
+}
+
+.instructions-page {
+    background-color: black;
+
+}
+
+.modal-backdrop {
+    background-color: black;
+    opacity: 75%;
+}
+
+.modal-body {
+
 }

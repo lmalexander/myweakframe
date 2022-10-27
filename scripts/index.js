@@ -96,10 +96,6 @@ function essayHeading4() {
     console.log(heading4);
     document.getElementById("p-4-head").innerHTML = heading4;
 };
-essayHeading1();
-essayHeading2();
-essayHeading3();
-essayHeading4();
 
 // body functions
 //let pg1 = "";
@@ -107,7 +103,6 @@ let pg1Ln = "";
 let pg2Ln = "";
 let pg3Ln = "";
 let pg4Ln = "";
-
 
 // paragraph 1
 function para1Ret() {
@@ -123,7 +118,6 @@ function ppg1(i) {
         para1.insertAdjacentHTML("beforeend", pg1Ln)
     }, 10000 * i);
 };
-para1Ret();
 
 // paragraph 2
 function para2Ret() {
@@ -139,7 +133,6 @@ function ppg2(i) {
         para2.insertAdjacentHTML("beforeend", pg2Ln)
     }, 10000 * i);
 };
-para2Ret();
 
 // paragraph 3
 function para3Ret() {
@@ -155,10 +148,9 @@ function ppg3(i) {
         para3.insertAdjacentHTML("beforeend", pg3Ln)
     }, 10000 * i);
 };
-para3Ret();
 
 // paragraph 4
-function ppg4(i) {
+function para4Ret(i) {
     let para4 = document.getElementById("p-4-body");
     setTimeout(function() {
         pg4Ln = indexEssay[0].p4.body;
@@ -166,10 +158,74 @@ function ppg4(i) {
         para4.insertAdjacentHTML("beforeend", pg4Ln)
     }, 10000 * i);
 };
-ppg4();
+
+
+/*
+essayHeading1();
+essayHeading2();
+essayHeading3();
+essayHeading4();
+para1Ret();
+para2Ret();
+para3Ret();
+para4Ret();
+
+
+let promise = essayHeading1();
+let promise2 = essayHeading2();
+let promise3 = essayHeading3();
+let promise4 = essayHeading4();
+let promise5 = para1Ret();
+let promise6 = para2Ret();
+let promise7 = para3Ret();
+let promise8 = para4Ret();
 
 
 
-// serve instructions button
-// button click triggers instructions gif
-// timed button appears at end of instructions gif to go to main page
+
+
+function essayRet() {
+    essayHeading1();
+    essayHeading2();
+    essayHeading3();
+    essayHeading4();
+    para1Ret();
+    para2Ret();
+    para3Ret();
+    para4Ret();
+};
+essayRet();
+
+
+
+let promise = new Promise((resolve, reject) => essayHeading1());
+console.log(promise);
+
+promise.then(result => console.log(result));
+*/
+
+function resolve() {
+    return new Promise(resolve => {
+      essayHeading1();
+      console.log("essayheading1 worked")
+    });
+  }
+  
+  async function asyncCall() {
+    console.log('calling');
+    const result = await resolve();
+    console.log(result);
+    essayHeading2();
+    // expected output: "resolved"
+  }
+  
+  asyncCall();
+
+
+function instructions() {
+    // change page
+    let instPage = document.getElementById("page-body");
+    instPage.classList.add("instructions-page");
+};
+
+
