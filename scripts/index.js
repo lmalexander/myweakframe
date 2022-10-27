@@ -159,8 +159,6 @@ function para4Ret(i) {
     }, 10000 * i);
 };
 
-
-/*
 essayHeading1();
 essayHeading2();
 essayHeading3();
@@ -169,58 +167,6 @@ para1Ret();
 para2Ret();
 para3Ret();
 para4Ret();
-
-
-let promise = essayHeading1();
-let promise2 = essayHeading2();
-let promise3 = essayHeading3();
-let promise4 = essayHeading4();
-let promise5 = para1Ret();
-let promise6 = para2Ret();
-let promise7 = para3Ret();
-let promise8 = para4Ret();
-
-
-
-
-
-function essayRet() {
-    essayHeading1();
-    essayHeading2();
-    essayHeading3();
-    essayHeading4();
-    para1Ret();
-    para2Ret();
-    para3Ret();
-    para4Ret();
-};
-essayRet();
-
-
-
-let promise = new Promise((resolve, reject) => essayHeading1());
-console.log(promise);
-
-promise.then(result => console.log(result));
-*/
-
-function resolve() {
-    return new Promise(resolve => {
-      essayHeading1();
-      console.log("essayheading1 worked")
-    });
-  }
-  
-  async function asyncCall() {
-    console.log('calling');
-    const result = await resolve();
-    console.log(result);
-    essayHeading2();
-    // expected output: "resolved"
-  }
-  
-  asyncCall();
-
 
 function instructions() {
     // change page
