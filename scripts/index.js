@@ -98,7 +98,6 @@ function essayHeading4() {
 };
 
 // body functions
-//let pg1 = "";
 let pg1Ln = "";
 let pg2Ln = "";
 let pg3Ln = "";
