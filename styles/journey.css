@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+#carousel-journey {
+    padding-top: 150px;
+}
+
+.journey-text {
+    color: green;
+    font-size: 32px;
+}
