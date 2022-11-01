@@ -1,6 +1,8 @@
 console.log("js is connected")
 
-// index page opening essay
+// *** INDEX ESSAY ***
+
+// * text *
 let indexEssay = [
     {
     "p1" : {
@@ -70,85 +72,77 @@ let indexEssay = [
 }
 ];
 
-// header return functions
+// * variables *
+// header
 let heading1 = "";
 let heading2 = "";
 let heading3 = "";
-let heading4 = ""; 
-
-function essayHeading1() {
-    heading1 = indexEssay[0].p1.heading;
-    console.log(heading1);
-    document.getElementById("p-1-head").innerHTML = heading1;
-};
-function essayHeading2() {
-    heading2 = indexEssay[0].p2.heading;
-    console.log(heading2);
-    document.getElementById("p-2-head").innerHTML = heading2;
-};
-function essayHeading3() {
-    heading3 = indexEssay[0].p3.heading;
-    console.log(heading3);
-    document.getElementById("p-3-head").innerHTML = heading3;
-};
-function essayHeading4() {
-    heading4 = indexEssay[0].p4.heading;
-    console.log(heading4);
-    document.getElementById("p-4-head").innerHTML = heading4;
-};
-
-// body functions
+let heading4 = "";
+// body
 let pg1Ln = "";
 let pg2Ln = "";
 let pg3Ln = "";
 let pg4Ln = "";
 
+// * functions *
 // paragraph 1
-function para1Ret() {
-    for (let i = 0;  i < indexEssay[0].p1.body.length; i++) {
-        ppg1(i);
-    }
+function essayHeading1() {
+    heading1 = indexEssay[0].p1.heading;
+    console.log(heading1);
+    document.getElementById("p-1-head").innerHTML = heading1;
 };
-function ppg1(i) {
+function para1Ret() {
     let para1 = document.getElementById("p-1-body");
-    setTimeout(function() {
-        pg1Ln = indexEssay[0].p1.body[i];
-        console.log(pg1Ln);
-        para1.insertAdjacentHTML("beforeend", pg1Ln)
-    }, 10000 * i);
+    for (let i = 0;  i < indexEssay[0].p1.body.length; i++) {
+        setTimeout(function() {
+            
+            pg1Ln = indexEssay[0].p1.body[i];
+            console.log(pg1Ln);
+            para1.insertAdjacentHTML("beforeend", pg1Ln)
+        }, 10000 * i);
+    }
 };
 
 // paragraph 2
-function para2Ret() {
-    for (let i = 0;  i < indexEssay[0].p2.body.length; i++) {
-        ppg2(i);
-    }
+function essayHeading2() {
+    heading2 = indexEssay[0].p2.heading;
+    console.log(heading2);
+    document.getElementById("p-2-head").innerHTML = heading2;
 };
-function ppg2(i) {
+function para2Ret() {
     let para2 = document.getElementById("p-2-body");
-    setTimeout(function() {
-        pg2Ln = indexEssay[0].p2.body[i];
-        console.log(pg2Ln);
-        para2.insertAdjacentHTML("beforeend", pg2Ln)
-    }, 10000 * i);
+    for (let i = 0;  i < indexEssay[0].p2.body.length; i++) {
+        setTimeout(function() {
+            pg2Ln = indexEssay[0].p2.body[i];
+            console.log(pg2Ln);
+            para2.insertAdjacentHTML("beforeend", pg2Ln)
+        }, 10000 * i);
+    }
 };
 
 // paragraph 3
-function para3Ret() {
-    for (let i = 0;  i < indexEssay[0].p3.body.length; i++) {
-        ppg3(i);
-    }
+function essayHeading3() {
+    heading3 = indexEssay[0].p3.heading;
+    console.log(heading3);
+    document.getElementById("p-3-head").innerHTML = heading3;
 };
-function ppg3(i) {
+function para3Ret() {
     let para3 = document.getElementById("p-3-body");
-    setTimeout(function() {
-        pg3Ln = indexEssay[0].p3.body[i];
-        console.log(pg3Ln);
-        para3.insertAdjacentHTML("beforeend", pg3Ln)
-    }, 10000 * i);
+    for (let i = 0;  i < indexEssay[0].p3.body.length; i++) {
+        setTimeout(function() {
+            pg3Ln = indexEssay[0].p3.body[i];
+            console.log(pg3Ln);
+            para3.insertAdjacentHTML("beforeend", pg3Ln)
+        }, 10000 * i);
+    }
 };
 
 // paragraph 4
+function essayHeading4() {
+    heading4 = indexEssay[0].p4.heading;
+    console.log(heading4);
+    document.getElementById("p-4-head").innerHTML = heading4;
+};
 function para4Ret(i) {
     let para4 = document.getElementById("p-4-body");
     setTimeout(function() {
@@ -158,19 +152,56 @@ function para4Ret(i) {
     }, 10000 * i);
 };
 
-essayHeading1();
-essayHeading2();
-essayHeading3();
-essayHeading4();
-para1Ret();
-para2Ret();
-para3Ret();
-para4Ret();
+// * sequential return *
+new Promise(function(fulfill, reject){
+    essayHeading1();
+    fulfill();
+}).then(function(result){
+    return new Promise(function(fulfill, reject){
+        para1Ret();
+        fulfill();
+    });
+}).then(function(result){
+    return new Promise(function(fulfill, reject){
+        essayHeading2();
+        fulfill();
+    });
+}).then(function(result){
+    return new Promise(function(fulfill, reject){
+        para2Ret();
+        fulfill();
+    });
+}).then(function(result){
+        return new Promise(function(fulfill, reject){
+        essayHeading3();
+        fulfill();
+    });
+}).then(function(result){
+    return new Promise(function(fulfill, reject){
+    para3Ret();
+    fulfill();
+});
+}).then(function(result){
+    return new Promise(function(fulfill, reject){
+    essayHeading4();
+    fulfill();
+});
+}).then(function(result){
+    return new Promise(function(reject){
+    para4Ret();
+});
+});
 
+
+// *** INSTRUCTIONS ***
 function instructions() {
     // change page
     let instPage = document.getElementById("page-body");
     instPage.classList.add("instructions-page");
 };
 
-
+let tIntro = '<video src="./media/vid/t-intro.mp4" class="img-fluid"></video>';
+function tIntroRet() {
+    console.log(tIntro);
+    document.getElementById("inst-display-modal").innerHTML = tIntro;
+}
