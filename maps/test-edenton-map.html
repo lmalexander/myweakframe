@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+      html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      #map {
+        /* configure the size of the map */
+        width: 50%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Edenton, NC</h1>
+    <h2>Markers represent key locations from Incidents in the Life of a Slave Girl</h2>
+    
+    <div id="map"></div>
+    
+    <script>
+      // initialize Leaflet
+      var map = L.map("map").setView({lon: -76.6095, lat: 36.05792}, 20);
+
+      // add the OpenStreetMap tiles
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+      }).addTo(map);
+
+      // show the scale bar on the lower left corner
+      L.control.scale({imperial: true, metric: true}).addTo(map);
+
+      // show markers on page
+      // - ENC1842-PT_1
+      L.marker({lon: -76.6095, lat: 36.05792}).bindPopup("Molly Horniblow").addTo(map);
+      // - ENC1842-PT_2
+      L.marker({lon: -76.61004, lat: 36.0582}).bindPopup("Samuel Tredwell Sawyer").addTo(map);
+      // - ENC1842-PT_3
+      L.marker({lon: -76.61176, lat: 36.05952}).bindPopup("Dr. James Norcom").addTo(map);
+      // - ENC1842-PT_4
+      L.marker({lon: -76.60811, lat: 36.06015}).bindPopup("Martha Hoskins Rombough Blount").addTo(map);
+      // - ENC1842-PT_5
+      L.marker({lon: -76.60921, lat: 36.06184}).bindPopup("St. Paul's Church").addTo(map);
+      // - ENC1842-PT_6
+      L.marker({lon: -76.6090128, lat: 36.0579196}).bindPopup("Dr. Norcom's Office").addTo(map);
+      // - ENC1842-PT_7
+      L.marker({lon: -76.6089966, lat: 36.057916}).bindPopup("Horniblow's Tavern").addTo(map);
+      // - ENC1842-PT_8
+      L.marker({lon: -76.6088998, lat: 36.0578943}).bindPopup("Chowan County Courthouse and Jail").addTo(map);
+      // - ENC1842-PT_9
+      L.marker({lon: -76.609311, lat: 36.057063}).bindPopup("Josiah Collins").addTo(map);
+      // - ENC1842-PT_10
+      L.marker({lon: -76.609016418457, lat: 36.0584564208984}).bindPopup("Market House").addTo(map);
+      // - ENC1842-PT_11
+      L.marker({lon: -76.609422, lat: 36.056945}).bindPopup("Public Wharf").addTo(map);
+
+    
+    
+    </script>
+  </body>
+</html>
