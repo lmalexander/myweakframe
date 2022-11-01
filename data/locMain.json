@@ -1,0 +1,87 @@
+[
+  { 
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-72.519852, 42.373222]
+    },
+    "properties": {
+        "id": "mapMain-PT_1",
+        "name": "Amherst, MA",
+        "popupContent": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-72.673363, 41.765770]
+    },
+    "properties": {
+        "id": "mapMain-PT_2",
+        "name": "Hartford, CT",
+        "popupContent": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-75.165222, 39.952583]
+    },
+    "properties": {
+        "id": "mapMain-PT_3",
+        "name": "Philadelphia, PA",
+        "popupContent": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.036873, 38.907192]
+    },
+    "properties": {
+        "id": "mapMain-PT_4",
+        "name": "Washington, D.C.",
+        "popupContent": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.436050, 37.540726]
+    },
+    "properties": {
+        "id": "mapMain-PT_5",
+        "name": "Richmond, VA",
+        "popupContent": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-76.6090128, 36.0579196]
+    },
+    "properties": {
+        "id": "mapMain-PT_6",
+        "name": "Edenton, NC",
+        "popupContent": ""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-76.6108732,36.0583529]
+    },
+    "properties": {
+        "id": "mapMain-PT_7",
+        "name": "6 W. King St.",
+        "popupContent": ""
+    }
+  }
+      
+]

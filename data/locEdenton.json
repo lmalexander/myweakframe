@@ -1,0 +1,167 @@
+[ 
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.6095,36.05792]
+        },
+        "properties": {
+            "id": "ENC1842-PT_1",
+            "name": "Molly Horniblow",
+            "mapLocation": "Corner of Broad Street and King Street",
+            "approxAddress": "322 S Broad St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.61004,36.0582]
+        },
+        "properties": {
+            "id": "ENC1842-PT_2",
+            "name": "Samuel Tredwell Sawyer",
+            "mapLocation": "Corner of Granville Street and Blount Street",
+            "approxAddress": "104 W King St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.61176,36.05952]
+        },
+        "properties": {
+            "id": "ENC1842-PT_3",
+            "name": "Dr. James Norcom",
+            "mapLocation": "Corner of Eden Street and Granville Street",
+            "approxAddress": "199 W Eden St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.60811,36.06015]
+        },
+        "properties": {
+            "id": "ENC1842-PT_4",
+            "name": "Martha Hoskins Rombough Blount",
+            "mapLocation": "Corner of Broad Street and Queen Street",
+            "approxAddress": "101 S Broad St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.60921,36.06184]
+        },
+        "properties": {
+            "id": "ENC1842-PT_5",
+            "name": "St. Paul's Church",
+            "mapLocation": "Corner of Broad Street and Church Street",
+            "approxAddress": "101 W Gale St, Edenton, NC 27932",
+            "currentName": "St. Paul's Episcopal Church",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.6090128,36.0579196]
+        },
+        "properties": {
+            "id": "ENC1842-PT_6",
+            "name": "Dr. Norcom's Office",
+            "mapLocation": "King Street, right of Broad Street",
+            "approxAddress": "103 E King St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.6089966,36.057916]
+        },
+        "properties": {
+            "id": "ENC1842-PT_7",
+            "name": "Horniblow's Tavern",
+            "mapLocation": "King Street, right of Broad Street",
+            "approxAddress": "105 E King St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.6088998,36.0578943]
+        },
+        "properties": {
+            "id": "ENC1842-PT_8",
+            "name": "Chowan County Courthouse and Jail",
+            "mapLocation": "King Street, right of Broad Street",
+            "approxAddress": "117 E King St, Edenton, NC 27932",
+            "currentName": "Historic 1767 Chowan County Courthouse",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.609311,36.057063]
+        },
+        "properties": {
+            "id": "ENC1842-PT_9",
+            "name": "Josiah Collins",
+            "mapLocation": "Water Street, right of Broad Street",
+            "approxAddress": "101 E Water St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.609016418457,36.0584564208984]
+        },
+        "properties": {
+            "id": "ENC1842-PT_10",
+            "name": "Market House",
+            "mapLocation": "Corner of Broad Street and Water Street",
+            "approxAddress": "423 S Broad St, Edenton, NC 27932",
+            "currentName": "",
+            "popupContent": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-76.609422,36.056945]
+        },
+        "properties": {
+            "id": "ENC1842-PT_11",
+            "name": "Public Wharf",
+            "mapLocation": "End of Broad Street",
+            "approxAddress": "510 S Broad St, Edenton, NC 27932",
+            "currentName": "Colonial Waterfront Park",
+            "popupContent": ""
+        }
+      }
+]
