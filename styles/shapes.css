@@ -1,0 +1,22 @@
+.blue-dot-map-line {
+    float: right;
+    width: 50%;
+}
+
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.blue-dotted-line {
+    border-top: 20px dotted #4688F4;
+}
