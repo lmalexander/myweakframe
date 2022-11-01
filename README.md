@@ -1,2 +1,2 @@
 # myweakframe1
-an archive repository of myweakframe 1.0
+a rebuild of myweakframe 1.0
